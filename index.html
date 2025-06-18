@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de Soutenance - Yann EDIKEU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Titre -->
+        <div class="slide active" data-slide="1">
+            <div class="slide-content slide-title">
+                <div class="logos-container">
+                    <img src="./images/Logo Esiea Baseline ingenieur - blanc fond bleu.png" alt="Logo ESIEA" class="logo">
+                    <img src="./images/2GendarmerieImage.jpg" alt="Logo Gendarmerie" class="logo">
+                </div>
+                <h1>MISSION TECHNIQUE À LA DGGN</h1>
+                <h2>Développement du site Compte Candidat</h2>
+                <div class="author-info">
+                    <h3>Yann EDIKEU</h3>
+                    <p>2ème année cycle ingénieur - ESIEA</p>
+                    <p class="period">Janvier 2025 - Juin 2025</p>
+                </div>
+                <div class="supervisors">
+                    <p><strong>Maître d'apprentissage :</strong> Lieutenant-colonel Josvah ANDRIAMANAMPISOA</p>
+                    <p><strong>Tutrice académique :</strong> Sabrina FATHI</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Plan -->
+        <div class="slide" data-slide="2">
+            <div class="slide-content">
+                <h1>Plan de la présentation</h1>
+                <ul class="plan-list">
+                    <li>Mise en contexte : La DGGN et l'ANFSI</li>
+                    <li>Mon service : La 2SIRHGN</li>
+                    <li>Ma mission : Le projet Sélection</li>
+                    <li>Dimensions techniques de la mission</li>
+                    <li>Intégration FranceConnect : un défi personnel</li>
+                    <li>Méthodologie agile et outils collaboratifs</li>
+                    <li>Montée en compétences et bilan humain</li>
+                    <li>Conclusion et perspectives</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 3: Contexte DGGN -->
+        <div class="slide" data-slide="3">
+            <div class="slide-content">
+                <div class="logo-container">
+                    <img src="./images/DGGNPic.jpg" alt="Logo DGGN" class="logo">
+
+                </div>
+                <h1>La Direction Générale de la Gendarmerie Nationale</h1>
+                <ul class="feature-list">
+                    <li>Force armée présente sur <strong>95% du territoire français</strong></li>
+                    <li>Lieu de haut commandement à <strong>Issy-les-Moulineaux</strong></li>
+                    <li><strong>1500 civils et militaires</strong> sur un site de 22 000 m²</li>
+                </ul>
+                <div class="missions">
+                    <h3>Missions :</h3>
+                    <div class="mission-grid">
+                        <div class="mission-item">Rassurer et protéger</div>
+                        <div class="mission-item">Enquêter et interpeller</div>
+                        <div class="mission-item">Sécuriser et maintenir l'ordre</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: ANFSI -->
+        <div class="slide" data-slide="4">
+            <div class="slide-content">
+                <div class="logo-container">
+                    <img src="./images/anfsi-bloc-marque-h-couleur.png" alt="Logo ANFSI" class="logo">
+                </div>
+                <h1>L'Agence du Numérique des Forces de Sécurité Intérieure</h1>
+                <ul class="feature-list">
+                    <li>Créée en <strong>2023</strong>, <strong>500 personnes</strong></li>
+                    <li>Modernisation des technologies Police/Gendarmerie</li>
+                    <li><strong>6 directions principales</strong></li>
+                    <li>Direction des Applications d'Appui au Commandement (DAAC)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 5: Mon Service -->
+        <div class="slide" data-slide="5">
+            <div class="slide-content">
+                <h1>La 2SIRHGN - Section des Systèmes d'Information RH</h1>
+                <ul class="feature-list">
+                    <li>Département des Systèmes d'Information de Soutien (DSIS)</li>
+                    <li>Développement et maintenance d'<strong>Agorha</strong> (SIRH central)</li>
+                    <li>Sites web : <strong>Minotaur.fr</strong> (réservistes), Recrutement en ligne</li>
+                    <!-- <li>Équipe de développement web : <strong>20 membres</strong></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 6: Mission -->
+        <div class="slide" data-slide="6">
+            <div class="slide-content">
+                <h1>Le Projet Sélection : Modernisation du Recrutement</h1>
+                <div class="two-column">
+                    <div class="column">
+                        <h3 class="problem">PROBLÉMATIQUE :</h3>
+                        <ul>
+                            <li>Objectifs de recrutement ambitieux (doublement visé d'ici 2027)</li>
+                            <li>Site actuel vieillissant (Zend Framework 2006)</li>
+                            <li>Besoins d'amélioration : accessibilité, interactivité, suivi candidat</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="solution">SOLUTION :</h3>
+                        <ul>
+                            <li>Portail candidat externe (Compte Candidat)</li>
+                            <li>Back-office gestionnaire intégré à Agorha</li>
+                            <li>Parcours candidat fluide et moderne</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Équipe Projet -->
+        <div class="slide" data-slide="7">
+            <div class="slide-content">
+                <h1>L'équipe de développement</h1>
+                <ul class="team-list">
+                    <li><strong>Chef de projet :</strong> Capitaine Tony Morelet</li>
+                    <li><strong>Tech leads :</strong> Adjudant-chef Maxime Paintendre (web), Alexandre Fink (back-office)</li>
+                    <li><strong>Développeurs SAP :</strong> Adjudants Charles Peson, Guillaume Bourliataud</li>
+                    <li><strong>Développeurs PHP :</strong> Adjudant Jonathan Perrin + 4 apprentis()</li>
+                    <li><strong>UX Designer & Product Owner:</strong> Nicolas GRANDJEAN</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 8: Technologies -->
+        <div class="slide" data-slide="8">
+            <div class="slide-content">
+                <h1>Stack Technique et Outils</h1>
+                <div class="tech-grid">
+                    <div class="tech-section">
+                        <h3>BACKEND</h3>
+                        <ul>
+                            <li>PHP 8 / Symfony 6</li>
+                            <li>PostgreSQL</li>
+                            <li>API Platform (APIs RESTful)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-section">
+                        <h3>FRONTEND</h3>
+                        <ul>
+                            <li>HTML5/CSS3, JavaScript, Vue.js</li>
+                            <li>DSFR (Design Système État Français)</li>
+                            <li>Figma (maquettes)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-section">
+                        <h3>ENVIRONNEMENT</h3>
+                        <ul>
+                            <li>Docker (conteneurisation)</li>
+                            <li>PHPStorm/VS Code, GitHub Copilot</li>
+                            <li>GitLab (CI/CD), Jira/Confluence, Slack</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: FranceConnect -->
+        <div class="slide" data-slide="9">
+            <div class="slide-content">
+                <h1>Intégration FranceConnect : Un Défi Personnel</h1>
+                <div class="three-section">
+                    <div class="section">
+                        <h3>CONTEXTE</h3>
+                        <ul>
+                            <li>Dispositif d'identification numérique de l'État</li>
+                            <li>Alternative aux comptes classiques</li>
+                            <li>Sécurité gouvernementale</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>MES RÉALISATIONS</h3>
+                        <ul>
+                            <li>Étude de la documentation ANTS</li>
+                            <li>Implémentation OAuth 2.0</li>
+                            <li>Gestion des tokens JWT</li>
+                            <li>Tests en environnement de développement</li>
+                            <li>En attente des clés de production</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>COMPÉTENCES ACQUISES</h3>
+                        <ul>
+                            <li>Protocoles d'authentification sécurisée</li>
+                            <li>APIs gouvernementales</li>
+                            <li>Normes eIDAS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Méthodologie -->
+        <div class="slide" data-slide="10">
+            <div class="slide-content">
+                <h1>Méthodologie Agile et Outils Collaboratifs</h1>
+                <div class="three-section">
+                    <div class="section">
+                        <h3>SCRUM ADAPTÉ</h3>
+                        <ul>
+                            <li>Sprints de 2 semaines</li>
+                            <li>Daily meetings, Sprint planning, Revues, Rétrospectives</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>ORGANISATION</h3>
+                        <ul>
+                            <li><strong>MOA :</strong> BRCE + CRJ (clients finaux)</li>
+                            <li><strong>AMOA :</strong> MSIA (traduction besoins/technique)</li>
+                            <li><strong>MOE :</strong> 2SIRHGN (développement)</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>WORKFLOW GIT</h3>
+                        <ul>
+                            <li>Branches protégées (develop/master)</li>
+                            <li>Merge requests avec revues de code</li>
+                            <li>3 environnements (dev/preprod/prod)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Réalisations -->
+        <div class="slide" data-slide="11">
+            <div class="slide-content">
+                <h1>Mes Contributions Techniques</h1>
+                <div class="three-section">
+                    <div class="section">
+                        <h3>DÉVELOPPEMENT</h3>
+                        <ul>
+                            <li>Fonctionnalités complètes de bout en bout</li>
+                            <li>Corrections post-audit sécurité</li>
+                            <li>Résolution de bugs et régressions</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>PROCESSUS</h3>
+                        <ul>
+                            <li>Workflow GitLab maîtrisé</li>
+                            <li>Revues de code collaboratives</li>
+                            <li>Documentation technique</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>PROGRESSION</h3>
+                        <ul>
+                            <li>D'intégration front-end à fonctionnalités complexes</li>
+                            <li>Autonomie croissante sur les tâches critiques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Compétences -->
+        <div class="slide" data-slide="12">
+            <div class="slide-content">
+                <h1>Montée en Compétences Techniques</h1>
+                <div class="skills-comparison">
+                    <div class="before">
+                        <h3>AVANT LA MISSION</h3>
+                        <ul>
+                            <li>Connaissances limitées en PHP</li>
+                            <li>Expérience basique développement web</li>
+                        </ul>
+                    </div>
+                    <div class="acquired">
+                        <h3>ACQUIS DURANT LA MISSION</h3>
+                        <ul>
+                            <li>Maîtrise PHP/Symfony (MVC, services, routing)</li>
+                            <li>Sécurité web et OAuth 2.0</li>
+                            <li>Workflow Git professionnel</li>
+                            <li>Méthodologie agile (Scrum)</li>
+                            <li>Compréhension enjeux secteur public</li>
+                        </ul>
+                    </div>
+                    <div class="transformation">
+                        <h3>TRANSFORMATION</h3>
+                        <ul>
+                            <li>De code "qui fonctionne" à code professionnel</li>
+                            <li>Qualité, lisibilité, maintenabilité</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Humain -->
+        <div class="slide" data-slide="13">
+            <div class="slide-content">
+                <h1>Dimensions Humaines et Adaptation</h1>
+                <div class="three-section">
+                    <div class="section">
+                        <h3>ENVIRONNEMENT MILITAIRE</h3>
+                        <ul>
+                            <li>Hiérarchie structurée (adjudant-chef au colonel)</li>
+                            <li>Rigueur, confidentialité, procédures</li>
+                            <li>Culture du service public</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>COLLABORATION</h3>
+                        <ul>
+                            <li>Profils variés (SAP, chefs de projet, métier, UX)</li>
+                            <li>Communication adaptée selon interlocuteurs</li>
+                            <li>Travail en équipe agile</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>RSE</h3>
+                        <ul>
+                            <li>Accessibilité numérique (RGAA)</li>
+                            <li>Composants DSFR pour inclusion</li>
+                            <li>Responsabilité sociale du développement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Bilan -->
+        <div class="slide" data-slide="14">
+            <div class="slide-content">
+                <h1>Bilan de ma Mission Technique</h1>
+                <div class="three-section">
+                    <div class="section">
+                        <h3 class="success">RÉUSSITES TECHNIQUES</h3>
+                        <ul>
+                            <li>Intégration FranceConnect opérationnelle</li>
+                            <li>Maîtrise stack Symfony/PostgreSQL</li>
+                            <li>Adoption workflow professionnel</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3 class="success">RÉUSSITES HUMAINES</h3>
+                        <ul>
+                            <li>Intégration équipe militaire/civile</li>
+                            <li>Autonomie progressive sur projets critiques</li>
+                            <li>Adaptation culture institutionnelle</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3 class="success">IMPACT PROJET</h3>
+                        <ul>
+                            <li>Contribution modernisation recrutement GN</li>
+                            <li>Amélioration expérience candidats</li>
+                            <li>Outils gestionnaires optimisés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Conclusion -->
+        <div class="slide" data-slide="15">
+            <div class="slide-content">
+                <h1>Perspectives et Conclusion</h1>
+                <div class="three-section">
+                    <div class="section">
+                        <h3>ACQUIS PERSONNELS</h3>
+                        <ul>
+                            <li>Compétences techniques affirmées</li>
+                            <li>Expérience projet complexe</li>
+                            <li>Vision claire carrière future</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>INTÉRÊT CONFIRMÉ</h3>
+                        <ul>
+                            <li>Projets numériques à impact sociétal</li>
+                            <li>Secteur public et modernisation</li>
+                            <li>Développement au service de l'intérêt général</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>SUITE</h3>
+                        <ul>
+                            <li>Prêt pour prochaines étapes alternance</li>
+                            <li>Projet de fin d'études (5ème année)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Final -->
+        <div class="slide" data-slide="16">
+            <div class="slide-content slide-final">
+                <h1>MERCI POUR VOTRE ATTENTION</h1>
+                <h2>Avez-vous des questions ?</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn">← Précédent</button>
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">16</span>
+        </div>
+        <button class="nav-btn" id="nextBtn">Suivant →</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
